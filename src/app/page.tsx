@@ -15,7 +15,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-
+import { teachers } from "@/utils/mockData";
 const stats = [
   {
     title: "Total Teachers",
@@ -44,24 +44,9 @@ const stats = [
 ];
 
 const recentTeachers = [
-  {
-    id: 1,
-    name: "Aditi Sharma",
-    email: "aditi.sharma@example.com",
-    avatar: "/avatar1.jpg",
-  },
-  {
-    id: 2,
-    name: "Rohan Deshmukh",
-    email: "rohan.d@example.com",
-    avatar: "/avatar2.jpg",
-  },
-  {
-    id: 3,
-    name: "Meena Rao",
-    email: "meena.rao@example.com",
-    avatar: "/avatar1.jpg",
-  },
+ teachers[0],
+  teachers[1],
+  teachers[2],
 ];
 const paymentTrends = [
   { month: "Jan", amount: 12000 },
