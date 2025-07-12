@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
+import { Save } from "lucide-react";
 
 const schema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -239,8 +240,9 @@ export default function TeacherForm({ initialData, onSubmit }: Props) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-black disabled:opacity-50"
+            className="bg-gray-700 flex item-center justify-center gap-2 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-black disabled:opacity-50"
           >
+            <Save />
             {isSubmitting ? "Saving..." : "Save Teacher"}
           </button>
         </div>

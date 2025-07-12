@@ -120,7 +120,7 @@ export default function PaymentPage() {
                     {teacher.paymentStatus === "unpaid" ? (
                       <button
                         onClick={() => markAsPaid(teacher.id)}
-                        className="px-3 py-1 text-sm bg-blue-600 text-white rounded hover:bg-blue-700"
+                        className="bg-gray-700 flex item-center justify-center gap-2 hover:bg-gray-600 text-white text-sm py-1 px-4 rounded-lg shadow-lg hover:shadow transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-black disabled:opacity-50"
                       >
                         Mark as Paid
                       </button>
