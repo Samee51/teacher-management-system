@@ -4,13 +4,12 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import { Pencil } from "lucide-react";
 import Link from "next/link";
-import { teachers as dummyTeachers } from "@/utils/mockData";
+import { teachers as dummyTeachers ,Teacher } from "@/utils/mockData";
 import {
   BarChart,
   Bar,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   Legend,
   ResponsiveContainer,
@@ -87,11 +86,11 @@ export default function TeacherProfilePage() {
           </div>
           <div className="flex items-center justify-between">
             <span className="font-medium">Status:</span>
-            {statusBadge(teacher.status, teacher.status as any)}
+            {statusBadge(teacher.status, teacher.status as Teacher["status"])}
           </div>
           <div className="flex items-center justify-between">
             <span className="font-medium">Payment Status:</span>
-            {statusBadge(teacher.paymentStatus, teacher.paymentStatus as any)}
+            {statusBadge(teacher.paymentStatus, teacher.paymentStatus as Teacher["paymentStatus"])}
           </div>
           <div className="flex items-center justify-between">
             <span className="font-medium">Last Payment:</span>

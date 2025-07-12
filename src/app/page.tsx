@@ -2,7 +2,6 @@
 import {
   Users,
   CheckCircle,
-  AlertCircle,
   CircleDollarSign,
 } from "lucide-react";
 import Image from "next/image";
@@ -11,7 +10,6 @@ import {
   Line,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
@@ -162,7 +160,7 @@ export default function DashboardPage() {
              <ul className="grid gap-1">
               {recentTeachers
                 .filter((_, i) => i < 2) // simulate 2 unpaid
-                .map((teacher, index) => (
+                .map((teacher) => (
                   <li
                     key={teacher.id}
                     className={`flex justify-between border-s-[15px] border-gray-400 items-center px-3 py-3 rounded bg-gray-50 "bg-gray-50 dark:bg-gray-800 " 
