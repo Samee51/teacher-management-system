@@ -56,7 +56,7 @@ https://teacher-management-system-two.vercel.app/
 ---
 
 ##  Video Explaination
-
+https://www.loom.com/share/265a5eff9f9b4f54aaa35968a6b0cb0a?sid=050496be-40ac-4a81-99ed-a123cf7cec9c
 ---
 
 ## 🧪 Available Scripts
