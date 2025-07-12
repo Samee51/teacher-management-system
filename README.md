@@ -50,6 +50,14 @@ A modern, responsive **teacher management dashboard** built with **Next.js 15**,
 | **React Hot Toast** | Toasts for feedback      |
 
 ---
+##  Live Demo
+
+https://teacher-management-system-two.vercel.app/
+---
+
+##  Video Explaination
+
+---
 
 ## 🧪 Available Scripts
 
