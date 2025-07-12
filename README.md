@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍🏫 Teacher Management System
 
-## Getting Started
+A modern, responsive **teacher management dashboard** built with **Next.js 15**, **Tailwind CSS**, and **React 19**. This app provides an admin interface to manage teachers, track payments, view teacher profiles, and perform basic CRUD operations with elegant UI and smooth UX.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+### 🧩 Core Pages
+- **Dashboard**: Overview of total teachers, payment status, and quick stats.
+- **Teacher List**: Table of all teachers with:
+  - Name, Email, Subject
+  - Status (active/inactive)
+  - Payment status (paid/unpaid)
+- **Teacher Profile**:
+  - View personal details and payment summary
+  - Edit profile info
+- **Add/Edit Teacher Form**:
+  - Form validation with `react-hook-form` + `zod`
+  - Loading + success state feedback
+
+### 💳 Payment Management
+- Mark payments as **Paid**
+- See last payment date
+- Simulated payment form/modal (optional)
+
+### ✅ UX Details
+- Form validations with inline error messages
+- Toast notifications using `react-hot-toast`
+- Loading and hover states on buttons
+- Accessible form labels and keyboard support
+
+### 📱 Responsive Design
+- Fully responsive layout:
+  - Grid and table views adapt across mobile, tablet, and desktop
+  - Sidebar drawer on mobile with backdrop click-to-close
+
+---
+
+## 🛠 Tech Stack
+
+| Tech             | Use                         |
+|------------------|------------------------------|
+| **Next.js 15**   | App directory, routing       |
+| **React 19**     | UI development               |
+| **Tailwind CSS** | Utility-first responsive UI  |
+| **Lucide React** | Icon set                     |
+| **React Hook Form + Zod** | Form management & schema validation |
+| **Recharts**     | Data visualizations (Bar Chart) |
+| **React Hot Toast** | Toasts for feedback      |
+
+---
+
+## 🧪 Available Scripts
 
 ```bash
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Build for production
+npm run build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Start production server
+npm run start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Run linter
+npm run lint
